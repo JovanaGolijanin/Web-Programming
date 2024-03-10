@@ -1,0 +1,44 @@
+h1
+{
+    background-color: seagreen;
+}
+
+.kl0
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.kl1
+{
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.kl2
+{
+    font-weight: bolder;
+    
+}
+
+.kl3
+{
+    line-height: 50px;
+}
+
+.kl4
+{
+    text-align: center;
+}
+
+.kl5
+{
+    text-decoration: line-through;
+}
+
+.kl6
+{
+    margin: 30px;
+    border: 15px solid violet;
+    padding: 20px;
+}

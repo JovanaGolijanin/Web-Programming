@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const arrayNumbers = [1, 2, 3, 4];
+        const sum1 = arrayNumbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+        console.log(sum1);
+        const sum2 = arrayNumbers.reduce((accumulator, currentValue) => {
+            return accumulator += currentValue;
+            }, 5)
+        console.log(sum2);
+
+
+/* 
+        let arrayNum = [5, 12, 8, 130, 44];
+        const found = arrayNum.find(el => el > 10);
+        console.log(found); */
+
+/* 
+        let X = 6;
+        let words = ['spray', 'destruction', 'present',
+                    'exuberant', 'limit', 'elite',];
+        console.log(words);
+        const resultFilter1 = words.filter(word => word.length > X);
+        console.log(resultFilter1);
+
+        const resultFilter2 = words.filter(isLongerThanX);
+        console.log(resultFilter2);
+        function isLongerThanX(string)
+        {
+            return string.length > X;
+        } */
+
+      /*   let array = [1, 4, 9, 16];
+        console.log(array);
+        let arrayMap1 = array.map(x => x * 2)
+        console.log(arrayMap1);
+
+        let arrayMap2 = array.map((x) => {
+            return x * 2;
+        })
+        console.log(arrayMap2);
+
+        let arrayMap3 = array.map(function(x){
+            return x * 2;
+        })
+        console.log(arrayMap3); */
+
+       /*  for(var i=0;i<10;i++)
+        {
+            (function(a){
+                var btn=document.createElement("button");
+                btn.innerHTML=a;
+                document.body.appendChild(btn);
+                btn.onclick=function(){
+                    this.innerHTML=a++;
+                }
+            })(i);
+            
+        } */
+
+
+       /*  (function(boja){
+        var blok = document.createElement("div");
+        blok.innerHTML = "Blok";
+        blok.onclick=function(){
+            blok.style.backgroundColor= boja;
+        }
+
+        document.body.appendChild(blok);
+        })("red"); */
+
+     /*   (function fun(){
+            alert("cao");
+        })();
+ */
+        //  fun();
+
+    /*     function dodaj(){
+            let blok = document.createElement("div");
+            blok.innerHTML = "Klikni";
+            document.body.appendChild(blok);
+
+            let d=document.createElement("button");
+            d.innerHTML= "dugme";
+            d.value="dugme";
+            d.onclick=klik;
+            document.body.appendChild(d);
+
+            function klik(){
+                blok.innerHTML="Klikuli smo na dugme";
+            }
+        }
+
+        dodaj(); */
+
+
+
+/*         function nadfja(){
+            var broj = 0;
+
+            function fun(){
+                broj++;
+                console.log("Broj je: " + broj);
+            }
+            fun();
+            window.setTimeout(fun, 5000);
+            console.log("nadfja je zavrsena");
+        }
+
+        nadfja(); */
+
+       /*  var a=[1,2,3,4,5];
+        function sum(niz){
+            var s=0;
+            niz.forEach(element => {
+                s+=element;
+            });
+            return s;
+        }
+
+        console.log("Suma je: " + sum(a));
+ */
+        /* function nadfja(fun){
+            return function(){
+                var rez=fun.apply(null, arguments);
+                console.log(rez);
+                return rez;
+            }
+        }
+
+        
+        var fizraz = nadfja(function(x,y){
+                return x+y;
+            });
+
+        var x= fizraz(2,3);
+        console.log(x); */
+
+        /* function fun(){
+            document.body.style.backgroundColor="#00FF00";
+        }
+        window.setTimeout(fun, 5000); */
+
+
+
+        /* let blok = document.createElement("div");
+        blok.innerHTML="Sadrzaj bloka";
+        blok.addEventListener("click", klikni);
+        document.body.appendChild(blok);
+
+        function klikni(){
+            this.style.color="#FF0000";
+        } */
+
+       /*  var a=[2,5,3,1,7];
+        
+        var a2= a.map(function(el){
+            return el>4;
+        });
+        console.log(a2); */
+
+    </script>
+</body>
+</html>
+

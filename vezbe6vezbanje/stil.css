@@ -1,0 +1,45 @@
+.Naslov
+{
+    background-color: aqua;
+}
+
+.H1
+{
+    color: cornflowerblue;
+}
+
+.Naslov.H1
+{
+    font-size:xx-large;
+}
+
+h3
+{
+    background-color: blanchedalmond;
+    color: brown;
+}
+
+#emElement
+{
+    background-color: crimson;
+}
+
+[class^="col"]
+{
+    background-color: yellow;
+}
+
+[class$="1"]
+{
+    background-color: violet;
+}
+
+header
+{
+    background-color: teal;
+}
+
+nav
+{
+    border: 1px solid seagreen;
+}

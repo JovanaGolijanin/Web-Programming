@@ -1,0 +1,21 @@
+[class^="class"]
+{
+    height: 50px;
+    border: 1px solid black;
+    flex: 1 1 50px; 
+    background-color: darkcyan;
+}
+.roditelj{
+    display: flex;
+    background-color: darkgray;
+    height: 300px;
+    align-items: flex-end;
+}
+.class2, .class5, .class7{
+    order:-1;
+    height:100px;
+}
+.class5{
+    align-self: flex-start;
+    flex-grow: 2;
+}

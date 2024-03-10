@@ -1,0 +1,236 @@
+<h2>PRIJAVNI SEMESTRALNI LIST ZA LJETNJI SEMESTAR AK. 2022/23. GODINE</h2>
+
+	<form id="my-form">
+        <head>
+            <script src="skripta.js"></script>
+          </head>
+          
+
+		<label for="broj-upisnice">Broj upisnice (indeksa):</label>
+		<input type="text" id="broj-upisnice" name="broj-upisnice" required><br><br>
+        
+        <label for="semestar-select">Izaberite semestar:</label>
+        <select id="semestar-select">
+            <option value="0">Svi semestri</option>
+            <option value="1">Semestar 1</option>
+            <option value="2">Semestar 2</option>
+            <option value="3">Semestar 3</option>
+            <option value="4">Semestar 4</option>
+            <option value="5">Semestar 5</option>
+            <option value="6">Semestar 6</option>
+            <option value="7">Semestar 7</option>
+            <option value="8">Semestar 8</option>
+        </select>
+        <br><br>
+
+        <label for="studijski-program">Studijski program:</label>
+        <select id="studijski-program" name="studijski-program" onchange="showSmer()">
+            <option value="racunarstvo-i-informatika">Računarstvo i informatika</option>
+            <option value="elektronika-i-telekomunikacije">Elektronika i telekomunikacije</option>
+            <option value="elektroenergetika-i-automatika">Elektroenergetika i automatika</option>
+        </select>
+        <br><br>
+
+        <label for="smer">Smjer:</label>
+		<input type="text" id="smer" name="smer" required><br><br>
+
+		<label for="student">Student:</label>
+		<input type="text" id="student" name="student" required><br><br>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Redni broj</th>
+					<th>Semestar</th>
+					<th>Naziv predmeta</th>
+					<th>Šifra predmeta</th>
+					<th>O/I</th>
+					<th>ECTS bodovi</th>
+				</tr>
+			</thead>
+            <tbody id="tabela-predmeta"></tbody>
+
+			<tbody>
+				<tr>
+					<td>1</td>
+					<!--<td><input type="text" name="semestar-1" required></td>-->
+                    <td>
+                    <select name="semestar-1" required>
+                        <option value=""></option>
+                        <option value="1">Semestar 1</option>
+                        <option value="2">Semestar 2</option>
+                        <option value="3">Semestar 3</option>
+                        <option value="4">Semestar 4</option>
+                        <option value="5">Semestar 5</option>
+                        <option value="6">Semestar 6</option>
+                        <option value="7">Semestar 7</option>
+                        <option value="8">Semestar 8</option>
+                    </select>
+                    </td>
+
+					<td><input type="text" name="naziv-predmeta-1" required></td>
+					<td><input type="text" name="sifra-predmeta-1" required></td>
+					<td><input type="text" name="oi-1" required></td>
+					<td><input type="text" name="ects-bodovi-1" required></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>
+                        <select name="semestar-2" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+					<td><input type="text" name="naziv-predmeta-2" required></td>
+					<td><input type="text" name="sifra-predmeta-2" required></td>
+					<td><input type="text" name="oi-2" required></td>
+					<td><input type="text" name="ects-bodovi-2" required></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>
+                        <select name="semestar-3" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+					<td><input type="text" name="naziv-predmeta-3" required></td>
+        			<td><input type="text" name="sifra-predmeta-3" required></td>
+				    <td><input type="text" name="oi-3" required></td>
+				    <td><input type="text" name="ects-bodovi-3" required></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <select name="semestar-4" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+                    <td><input type="text" name="naziv-predmeta-4" required></td>
+                    <td><input type="text" name="sifra-predmeta-4" required></td>
+                    <td><input type="text" name="oi-4" required></td>
+                    <td><input type="text" name="ects-bodovi-4" required></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <select name="semestar-5" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+                    <td><input type="text" name="naziv-predmeta-5" required></td>
+                    <td><input type="text" name="sifra-predmeta-5" required></td>
+                    <td><input type="text" name="oi-5" required></td>
+                    <td><input type="text" name="ects-bodovi-5" required></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <select name="semestar-6" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+                    <td><input type="text" name="naziv-predmeta-6" required></td>
+                    <td><input type="text" name="sifra-predmeta-6" required></td>
+                    <td><input type="text" name="oi-6" required></td>
+                    <td><input type="text" name="ects-bodovi-6" required></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>
+                        <select name="semestar-7" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+                    <td><input type="text" name="naziv-predmeta-7" required></td>
+                    <td><input type="text" name="sifra-predmeta-7" required></td>
+                    <td><input type="text" name="oi-7" required></td>
+                    <td><input type="text" name="ects-bodovi-7" required></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        <select name="semestar-8" required>
+                            <option value=""></option>
+                            <option value="1">Semestar 1</option>
+                            <option value="2">Semestar 2</option>
+                            <option value="3">Semestar 3</option>
+                            <option value="4">Semestar 4</option>
+                            <option value="5">Semestar 5</option>
+                            <option value="6">Semestar 6</option>
+                            <option value="7">Semestar 7</option>
+                            <option value="8">Semestar 8</option>
+                        </select>
+                        </td>
+                    <td><input type="text" name="naziv-predmeta-8" required></td>
+                    <td><input type="text" name="sifra-predmeta-8" required></td>
+                    <td><input type="text" name="oi-8" required></td>
+                    <td><input type="text" name="ects-bodovi-8" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <label for="ukupno-bodova">Ukupno bodova:</label>
+        <input type="text" id="ukupno-bodova" name="ukupno-bodova" required><br><br>
+
+        <label>
+            U Banjoj Luci, godine:
+            <input type="text" name="akademska_godina">
+        </label>
+        <br><br>
+          
+        <label>
+            Svojeručni potpis studenta:
+            <input type="text" name="potpis" style="border: none; border-bottom: 1px solid #000; font-size: 16px; padding: 5px 0; margin-bottom: 10px;">
+        </label>
+        <br><br>
+
+        <input type="submit" value="Potvrdi">
+
+    </form>

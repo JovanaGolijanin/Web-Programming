@@ -1,0 +1,19 @@
+div{
+    color:chartreuse;
+    font-size: 20px;
+}
+
+.d2{
+    background-color: rgb(255, 0, 0);
+}
+
+.test{
+    font-style: italic;
+}
+
+#h3el{
+    border: 2px dotted blueviolet;
+}
+nav ul li{
+    display:block;
+}

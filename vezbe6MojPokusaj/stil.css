@@ -1,0 +1,31 @@
+.glavni
+{
+    font-style: bold;
+}
+.prvi
+{
+    background-color: blue;
+}
+.spanel
+{
+    background-color: blueviolet;
+}
+.prvi
+{
+    color: springgreen;
+}
+.drugi
+{
+    color: springgreen;
+    background-color: red;
+    font-style: italic;
+}
+h2
+{
+    background-color: red;
+    border: 3px dotted mediumorchid;
+}
+
+nav ul li{
+    display:block;
+}

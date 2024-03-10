@@ -1,0 +1,23 @@
+h4
+{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+[class^="d"]
+{
+    border: 1px solid violet;
+    flex: 1 1 30px;
+    padding: 30px;
+    padding-left: 0%;
+    padding-top: 0%;
+    margin: 10px;
+    height: 50px;
+}
+
+.roditelj
+{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+}

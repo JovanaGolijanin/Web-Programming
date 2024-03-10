@@ -1,0 +1,24 @@
+.GlavniKontejner
+{
+    display: flex;
+    flex-direction: row;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+.Forma{
+    display: flex;
+    flex: 0 0 200px;
+    flex-direction: column;
+}
+.cbbox{
+    display: flex;
+    flex-direction: row;
+}

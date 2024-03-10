@@ -1,0 +1,38 @@
+.forma
+{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+
+}
+
+.NovaForma
+{
+    display: flex;
+    background-color: blueviolet;
+    flex-direction: row;
+
+}
+
+.zaLabele, .zaPolja
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100px;
+}
+
+
+.zaPolja
+{
+    flex-grow: 3;
+}
+
+#roditelj
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: beige;
+    flex: 1 1 auto;
+    flex-direction: column;
+}

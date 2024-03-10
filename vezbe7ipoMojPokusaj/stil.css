@@ -1,0 +1,49 @@
+.forma
+{
+    display: flex;
+}
+
+.divZaLabele
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+}
+
+.divZaPolja
+{
+    display: flex;
+    flex-direction: column;
+    flex: 3 1 100px;
+}
+
+.NovaBoja
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+    background-color: violet;
+}
+
+.roditelj
+{
+    display: flex;
+    flex: 1 0 100px;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+.dugme
+{
+    display: flex;
+    flex: 1 1 100px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.selekt
+{
+    display: flex;
+    width: 100%;
+}

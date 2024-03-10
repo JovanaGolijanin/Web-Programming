@@ -1,0 +1,140 @@
+<h2>SEMESTRALNI LIST (ovjera semestra)</h2>
+
+
+        <form>
+
+            <label for="faculty">Univerzitet u Banjoj Luci - Fakultet:</label>
+            <input type="text" id="faculty" name="faculty"><br><br>
+
+            <label for="dosije-broj">Dosije broj:</label>
+            <input type="text" id="dosije-broj" name="dosije-broj"><br><br>
+          
+            <label for="semestar-godina">Semestar - godina:</label>
+            <input type="text" id="semestar-godina" name="semestar-godina"><br><br>
+          
+            <label for="ime-prezime-studenta">Ime i prezime studenta:</label>
+            <input type="text" id="ime-prezime-studenta" name="ime-prezime-studenta"><br><br>
+          
+            <label for="datum-rodjenja">Dan, mjesec i godina rođenja:</label>
+            <input type="text" id="datum-rodjenja" name="datum-rodjenja"><br><br>
+          
+            <label for="mjesto-rodjenja">Mjesto rođenja:</label>
+            <input type="text" id="mjesto-rodjenja" name="mjesto-rodjenja"><br><br>
+          
+            <label for="opstina">Opština:</label>
+            <input type="text" id="opstina" name="opstina"><br><br>
+          
+            <label for="drzava">Država:</label>
+            <input type="text" id="drzava" name="drzava"><br><br>
+          
+            <label for="drzavljanstvo">Državljanin:</label>
+            <input type="text" id="drzavljanstvo" name="drzavljanstvo"><br><br>
+          
+            <label for="ocevo-zanimanje">Očevo zanimanje:</label>
+            <input type="text" id="ocevo-zanimanje" name="ocevo-zanimanje"><br><br>
+          
+            <label>
+                Slušao/la je u:
+                <input type="radio" name="status" value="redovni"> Zimskom
+                <input type="radio" name="status" value="vanredni"> Ljetnjem
+                semestru
+            </label>
+            <br><br>
+
+            <label>
+                Upisao/la se kao:
+                <input type="radio" name="status" value="redovni"> Redovni
+                <input type="radio" name="status" value="vanredni"> Vanredni
+            </label>
+            <br><br>
+
+            <label for="semester_year">Godine:</label>
+            <input type="text" id="semester_year" name="semester_year"><br><br>
+
+
+          
+            <label for="naziv-predmeta">Naziv predmeta:</label>
+            <input type="text" id="naziv-predmeta" name="naziv-predmeta"><br><br>
+          
+            <label for="ime-prezime-nastavnika">Ime i prezime nastavnika:</label>
+            <input type="text" id="ime-prezime-nastavnika" name="ime-prezime-nastavnika"><br><br>
+          
+            <label for="broj-casova">Broj nedjeljnih časova:</label>
+            <input type="text" id="broj-casova" name="broj-casova"><br><br>
+          
+            <label for="primjedba">Primjedba:</label>
+            <input type="text" id="primjedba" name="primjedba"><br><br>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Naziv predmeta</th>
+                        <th>Ime i prezime nastavnika</th>
+                        <th>Broj nedjeljnih časova</th>
+                        <th>Primjedba</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td><input type="text" name="semestar-1" required></td>
+                        <td><input type="text" name="naziv-predmeta-1" required></td>
+                        <td><input type="text" name="sifra-predmeta-1" required></td>
+                        <td><input type="text" name="oi-1" required></td>
+                        
+                    </tr>
+                    <tr>
+                       
+                        <td><input type="text" name="semestar-2" required></td>
+                        <td><input type="text" name="naziv-predmeta-2" required></td>
+                        <td><input type="text" name="sifra-predmeta-2" required></td>
+                        <td><input type="text" name="oi-2" required></td>
+                       
+                    </tr>
+                    <tr>
+                        
+                        <td><input type="text" name="semestar-3" required></td>
+                        <td><input type="text" name="naziv-predmeta-3" required></td>
+                        <td><input type="text" name="sifra-predmeta-3" required></td>
+                        <td><input type="text" name="oi-3" required></td>
+                      
+                    </tr>
+                    <tr>
+                      
+                        <td><input type="text" name="semestar-4" required></td>
+                        <td><input type="text" name="naziv-predmeta-4" required></td>
+                        <td><input type="text" name="sifra-predmeta-4" required></td>
+                        <td><input type="text" name="oi-4" required></td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+          
+            <br><br>
+            <label>
+                Svojeručni potpis studenta:
+                <input type="text" name="potpis">
+            </label>
+            <br><br>
+
+            <label for="ovjerava-sekretar">OVJERAVA SEKRETAR:</label>
+            <input type="text" id="ovjerava-sekretar" name="ovjerava-sekretar"><br><br>
+                
+            <!--<input type="submit" value="Potvrdi">-->
+
+            <button type="button" id="potvrdi">Potvrdi</button>
+
+            <script>
+                var dugme = document.getElementById("potvrdi");
+                dugme.addEventListener("click", function() {
+                  var ime = document.getElementById("ime").value;
+                  var prezime = document.getElementById("prezime").value;
+                  var potpis = document.getElementById("potpis").value;
+              
+                  alert("Ime: " + ime + "\nPrezime: " + prezime + "\nSvojeručni potpis studenta: " + potpis);
+                });
+              </script>
+              
+        </form>

@@ -1,0 +1,61 @@
+.min-max {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.max-vrednost,
+.min-vrednost,
+.prosecna-vrednost {
+    color: red;
+    text-align: right;
+}
+
+h3 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+body {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grad {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.div-podeoci {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.div-stub {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.stub {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.podeok {
+    border-top: 1px solid black;
+    width: 50px;
+    text-align: right;
+    margin: 0px;
+}
+
+.termometar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+}

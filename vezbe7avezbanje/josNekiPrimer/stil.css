@@ -1,0 +1,31 @@
+.roditelj
+{
+    display: flex;
+    background-color: burlywood;
+    height: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+[class^="d"]
+{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    
+}
+
+.d2
+{
+    align-self: flex-start;
+}
+
+.d5
+{
+    order: -2;
+}
+.d2
+{
+    order: -1;
+    flex-grow: 2;
+}

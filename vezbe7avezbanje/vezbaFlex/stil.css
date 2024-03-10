@@ -1,0 +1,41 @@
+h1
+{
+    background-color: yellow;
+}
+
+.kontejner
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* align-content: center; */
+    flex-grow: 5;
+    flex-shrink: 6;
+    height: 200px;
+    
+
+}
+
+[class^="b"]
+{
+    border: 1px solid black;
+    margin: 5px;
+    /* padding: 5px;
+    margin-top: 50px; */
+    align-self: flex-end;
+}
+
+
+.b9
+{
+    order: -1;
+}
+
+.b7
+{
+    order: -2;
+    flex-basis: 100px;
+    align-self: flex-start;
+}

@@ -1,0 +1,38 @@
+.contejner
+{
+    display: flex;
+    height: 250px;
+    background-color: antiquewhite;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+[class*="k"]
+{
+    align-self: flex-end;
+    border: 1px solid black;
+    height: 50px;
+    flex: 1 1 50px;
+}
+
+.k2
+{
+    order: -3;
+    height: 100px;
+}
+
+.k5
+{
+    order: -2;
+    align-self: flex-start;
+    flex-grow: 2;
+    height: 100px;
+}
+
+.k7
+{
+    order: -1;
+    height: 100px;
+}

@@ -1,0 +1,35 @@
+.GlavnaForma{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-collapse: collapse;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 400px;
+}
+
+.div{
+    display: flex;
+    flex: 1 0 100px;
+}
+
+.formaPorucivanje{
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.formaNabavka{
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+.naslov{
+    text-align: center;
+}
+
+.divZaCb
+{
+    display: flex;
+    flex-direction: column;
+}

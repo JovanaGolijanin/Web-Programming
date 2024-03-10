@@ -1,0 +1,28 @@
+.roditelj
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    background-color: burlywood;
+    border: 1px dotted lightblue;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    align-content: stretch;
+}
+div
+{
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-basis: 50px;
+    flex: 1 0 50;
+}
+.drugi{
+    order:-1;
+    flex-grow:3;
+    flex-shrink: 0;
+    align-self: start;
+}
+.peti{
+    order:-2;
+}

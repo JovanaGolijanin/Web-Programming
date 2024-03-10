@@ -1,0 +1,22 @@
+.roditelj{
+    height: 200px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div{
+    
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
+[class^="class"]{
+    justify-content: center;
+}
